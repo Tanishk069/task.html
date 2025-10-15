@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law School Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 12px;
+        }
+
+        th {
+            background: #2c3e50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+
+        .contracts {
+            background: #3498db;
+            color: white;
+        }
+
+        .criminal {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .constitutional {
+            background: #27ae60;
+            color: white;
+        }
+
+        .research {
+            background: #f39c12;
+            color: white;
+        }
+
+        .moot {
+            background: #9b59b6;
+            color: white;
+        }
+
+        .ethics {
+            background: #16a085;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Law School Timetable</h1>
+
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td>09:00 - 11:00</td>
+            <td class="contracts">Contracts<br>Room A101</td>
+            <td class="constitutional">Constitutional Law<br>Room C303</td>
+            <td class="criminal">Criminal Law<br>Room B201</td>
+            <td class="constitutional">Constitutional Law (Tutorial)<br>Room C304</td>
+            <td class="criminal">Criminal Law (Tutorial)<br>Room B202</td>
+        </tr>
+        <tr>
+            <td>11:00 - 13:00</td>
+            <td class="criminal">Criminal Law<br>Room B201</td>
+            <td class="contracts">Contracts (Tutorial)<br>Room A102</td>
+            <td class="research">Legal Research<br>Library</td>
+            <td class="contracts">Contracts (Lecture)<br>Room A101</td>
+            <td class="moot">Moot Competition<br>Moot Hall</td>
+        </tr>
+        <tr>
+            <td>14:00 - 16:00</td>
+            <td class="research">Legal Research<br>Library</td>
+            <td class="ethics">Legal Ethics<br>Room D102</td>
+            <td class="moot">Moot Court Prep<br>Moot Room</td>
+            <td class="research">Research Clinic<br>Clinic</td>
+            <td class="ethics">Ethics (Review)<br>Room D102</td>
+        </tr>
+        <tr>
+            <td>16:00 - 18:00</td>
+            <td class="moot">Moot Court<br>Moot Room</td>
+            <td></td>
+            <td class="ethics">Ethics Seminar<br>Room D102</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
