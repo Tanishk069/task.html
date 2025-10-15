@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Favorite Web Novels</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            background: #f9fafb;
+            color: #111;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .books {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .book {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .book:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .book img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+
+        .book .info {
+            padding: 15px;
+        }
+
+        .book h2 {
+            margin: 0 0 8px;
+            font-size: 1.2rem;
+            color: #1e293b;
+        }
+
+        .book p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> My Favorite Web Novels</h1>
+
+    <section class="books">
+        <div class="book">
+            <img src="orv.jpg" alt="Omniscient Reader’s Viewpoint cover">
+            <div class="info">
+                <h2>Omniscient Reader’s Viewpoint</h2>
+                <p>Kim Dokja, an ordinary reader, wakes up to find himself inside the very web novel he’s been following
+                    for years.</p>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="sl.jpg" alt="Solo Leveling cover">
+            <div class="info">
+                <h2>Solo Leveling</h2>
+                <p>Sung Jin-Woo, once the weakest hunter, gains a mysterious leveling system that lets him grow beyond
+                    all limits.</p>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="nm.jpg" alt="Nano Machine cover">
+            <div class="info">
+                <h2>Nano Machine</h2>
+                <p>Cheon Yeo-Woon’s destiny changes when nanotechnology from the future integrates with his body in a
+                    martial world.</p>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="overgeared.jpg" alt="Overgeared cover">
+            <div class="info">
+                <h2>Overgeared</h2>
+                <p>Grid, a struggling gamer, becomes one of the strongest players after unlocking the legendary
+                    blacksmith class.</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
