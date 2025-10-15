@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background: #fff;
+            padding: 25px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="tel"],
+        form input[type="date"],
+        form textarea {
+            width: 100%;
+            padding: 8px 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        form input[type="radio"],
+        form input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        form .options {
+            margin-bottom: 15px;
+        }
+
+        form input[type="button"] {
+            width: 100%;
+            background: #007bff;
+            color: white;
+            font-size: 16px;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+        }
+
+        form input[type="button"]:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="get">
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label for="Email">Email:</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label for="Phone">Phone No.:</label>
+        <input type="tel" placeholder="Enter your phone number">
+
+        <label for="gender">Gender:</label>
+        <div class="options">
+            <input type="radio" name="gender"> Male <br>
+            <input type="radio" name="gender"> Female <br>
+            <input type="radio" name="gender"> Other
+        </div>
+
+        <label for="DOB">Date of Birth:</label>
+        <input type="date">
+
+        <label for="Address">Address:</label>
+        <textarea placeholder="Enter your Address"></textarea>
+
+        <label for="hobbies">Hobbies:</label>
+        <div class="options">
+            <input type="checkbox"> Reading <br>
+            <input type="checkbox"> Traveling <br>
+            <input type="checkbox"> Gaming <br>
+            <input type="checkbox"> Sports <br>
+            <input type="checkbox"> Coding <br>
+            <input type="checkbox"> Music <br>
+            <input type="checkbox"> Novel Writing <br>
+        </div>
+
+        <input type="button" value="Submit">
+    </form>
+</body>
+
+</html>
